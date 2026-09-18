@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot name="Robot">
+    <link name="gripper_l_base">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.20000000"/>
+            <inertia ixx="0.00010000" ixy="0.00000000" ixz="0.00000000" iyy="0.00010000" iyz="0.00000000" izz="0.00010000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\base.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.80000000 0.80000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\base.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_l_finger_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.01000000"/>
+            <inertia ixx="0.00000100" ixy="0.00000000" ixz="0.00000000" iyy="0.00000100" iyz="0.00000000" izz="0.00000100"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.00000000 0.00000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_l_finger_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.01000000"/>
+            <inertia ixx="0.00000100" ixy="0.00000000" ixz="0.00000000" iyy="0.00000100" iyz="0.00000000" izz="0.00000100"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.00000000 0.00000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_r_base">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.20000000"/>
+            <inertia ixx="0.00010000" ixy="0.00000000" ixz="0.00000000" iyy="0.00010000" iyz="0.00000000" izz="0.00010000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\base.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.80000000 0.80000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\base.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_r_finger_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.01000000"/>
+            <inertia ixx="0.00000100" ixy="0.00000000" ixz="0.00000000" iyy="0.00000100" iyz="0.00000000" izz="0.00000100"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.00000000 0.00000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_r_finger_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="0.01000000"/>
+            <inertia ixx="0.00000100" ixy="0.00000000" ixz="0.00000000" iyy="0.00000100" iyz="0.00000000" izz="0.00000100"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.00000000 0.00000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\finger.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_base_link">
+        <inertial>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+    <link name="yumi_body">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="15.00000000"/>
+            <inertia ixx="0.50000000" ixy="0.00000000" ixz="0.00000000" iyy="0.60000000" iyz="0.00000000" izz="0.30000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\body.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.80000000 0.80000000 0.80000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\body.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_1_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 -0.03000000  0.12000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_1.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_1.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_1_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 -0.03000000  0.12000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_1.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_1.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_2_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_2.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_2.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_2_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_2.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_2.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_3_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_3.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_3.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_3_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_3.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_3.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_4_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_4.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_4.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_4_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_4.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_4.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_5_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_5.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_5.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_5_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_5.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_5.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_6_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_6.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_6.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_6_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_6.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_6.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_7_l">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_7.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_7.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="yumi_link_7_r">
+        <inertial>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <mass value="2.00000000"/>
+            <inertia ixx="0.10000000" ixy="0.00000000" ixz="0.00000000" iyy="0.10000000" iyz="0.00000000" izz="0.10000000"/>
+        </inertial>
+        <visual>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\visual\link_7.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+            <material name="">
+                <color rgba="0.50000000 0.50000000 0.50000000 1.00000000"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+            <geometry>
+                <mesh filename="meshes\collision\link_7.stl" scale="1.00000000 1.00000000 1.00000000"/>
+            </geometry>
+        </collision>
+    </link>
+    <joint name="gripper_l_joint" type="prismatic">
+        <parent link="gripper_l_base"/>
+        <child link="gripper_l_finger_r"/>
+        <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 -0.00650000  0.08370000"/>
+        <axis xyz="-1.00000000  0.00000000  0.00000000"/>
+        <limit lower="0.00000000" upper="0.02500000" effort="0" velocity="0"/>
+    </joint>
+    <joint name="gripper_l_joint_m" type="prismatic">
+        <parent link="gripper_l_base"/>
+        <child link="gripper_l_finger_l"/>
+        <origin rpy="0.00000000  0.00000000 -3.14159265" xyz="0.00000000 0.00650000 0.08370000"/>
+        <axis xyz="-1.00000000  0.00000000  0.00000000"/>
+        <limit lower="0.00000000" upper="0.02500000" effort="0" velocity="0"/>
+    </joint>
+    <joint name="gripper_r_joint" type="prismatic">
+        <parent link="gripper_r_base"/>
+        <child link="gripper_r_finger_r"/>
+        <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 -0.00650000  0.08370000"/>
+        <axis xyz="-1.00000000  0.00000000  0.00000000"/>
+        <limit lower="0.00000000" upper="0.02500000" effort="0" velocity="0"/>
+    </joint>
+    <joint name="gripper_r_joint_m" type="prismatic">
+        <parent link="gripper_r_base"/>
+        <child link="gripper_r_finger_l"/>
+        <origin rpy="0.00000000  0.00000000 -3.14159265" xyz="0.00000000 0.00650000 0.08370000"/>
+        <axis xyz="-1.00000000  0.00000000  0.00000000"/>
+        <limit lower="0.00000000" upper="0.02500000" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_base_link_to_body" type="fixed">
+        <parent link="yumi_base_link"/>
+        <child link="yumi_body"/>
+        <origin rpy="0.00000000 0.00000000 0.00000000" xyz="0.00000000 0.00000000 0.00000000"/>
+        <axis xyz="100"/>
+    </joint>
+    <joint name="yumi_joint_1_l" type="revolute">
+        <parent link="yumi_body"/>
+        <child link="yumi_link_1_l"/>
+        <origin rpy="0.97810000 -0.57160000  2.31800000" xyz="0.05355000 0.07250000 0.41492000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.94087979" upper="2.94087979" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_1_r" type="revolute">
+        <parent link="yumi_body"/>
+        <child link="yumi_link_1_r"/>
+        <origin rpy="-0.97950000 -0.56820000 -2.31550000" xyz="0.05355000 -0.07250000  0.41492000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.94087979" upper="2.94087979" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_2_l" type="revolute">
+        <parent link="yumi_link_1_l"/>
+        <child link="yumi_link_2_l"/>
+        <origin rpy="1.57079633 0.00000000 0.00000000" xyz="0.03000000 0.00000000 0.10000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.50454748" upper="0.75921822" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_2_r" type="revolute">
+        <parent link="yumi_link_1_r"/>
+        <child link="yumi_link_2_r"/>
+        <origin rpy="1.57079633 0.00000000 0.00000000" xyz="0.03000000 0.00000000 0.10000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.50454748" upper="0.75921822" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_3_l" type="revolute">
+        <parent link="yumi_link_3_l"/>
+        <child link="yumi_link_4_l"/>
+        <origin rpy="1.57079633 -1.57079633  0.00000000" xyz="-0.04188000  0.00000000  0.07873000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.15548163" upper="1.39626340" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_3_r" type="revolute">
+        <parent link="yumi_link_3_r"/>
+        <child link="yumi_link_4_r"/>
+        <origin rpy="1.57079633 -1.57079633  0.00000000" xyz="-0.04188000  0.00000000  0.07873000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.15548163" upper="1.39626340" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_4_l" type="revolute">
+        <parent link="yumi_link_4_l"/>
+        <child link="yumi_link_5_l"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="0.04050000 0.16461000 0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-5.06145483" upper="5.06145483" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_4_r" type="revolute">
+        <parent link="yumi_link_4_r"/>
+        <child link="yumi_link_5_r"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="0.04050000 0.16461000 0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-5.06145483" upper="5.06145483" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_5_l" type="revolute">
+        <parent link="yumi_link_5_l"/>
+        <child link="yumi_link_6_l"/>
+        <origin rpy="1.57079633 0.00000000 0.00000000" xyz="-0.02700000  0.00000000  0.10039000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-1.53588974" upper="2.40855437" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_5_r" type="revolute">
+        <parent link="yumi_link_5_r"/>
+        <child link="yumi_link_6_r"/>
+        <origin rpy="1.57079633 0.00000000 0.00000000" xyz="-0.02700000  0.00000000  0.10039000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-1.53588974" upper="2.40855437" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_6_l" type="revolute">
+        <parent link="yumi_link_6_l"/>
+        <child link="yumi_link_7_l"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="0.02700000 0.02900000 0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-3.99680399" upper="3.99680399" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_6_r" type="revolute">
+        <parent link="yumi_link_6_r"/>
+        <child link="yumi_link_7_r"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="0.02700000 0.02900000 0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-3.99680399" upper="3.99680399" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_7_l" type="revolute">
+        <parent link="yumi_link_2_l"/>
+        <child link="yumi_link_3_l"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="-0.03000000  0.17283000  0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.94087979" upper="2.94087979" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_joint_7_r" type="revolute">
+        <parent link="yumi_link_2_r"/>
+        <child link="yumi_link_3_r"/>
+        <origin rpy="-1.57079633  0.00000000  0.00000000" xyz="-0.03000000  0.17283000  0.00000000"/>
+        <axis xyz="0.00000000 0.00000000 1.00000000"/>
+        <limit lower="-2.94087979" upper="2.94087979" effort="0" velocity="0"/>
+    </joint>
+    <joint name="yumi_link_7_l_joint" type="fixed">
+        <parent link="yumi_link_7_l"/>
+        <child link="gripper_l_base"/>
+        <origin rpy="0.00000000  0.00000000 -3.14159265" xyz="0.00000000 0.00000000 0.00700000"/>
+        <axis xyz="100"/>
+    </joint>
+    <joint name="yumi_link_7_r_joint" type="fixed">
+        <parent link="yumi_link_7_r"/>
+        <child link="gripper_r_base"/>
+        <origin rpy="0.00000000  0.00000000 -3.14159265" xyz="0.00000000 0.00000000 0.00700000"/>
+        <axis xyz="100"/>
+    </joint>
+</robot>
